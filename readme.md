@@ -25,7 +25,7 @@ An entity contains persistable properties. A persistable property is an instance
 
 Entities can have relations with other entities (or with themselves) in the form of 1:N, 1:1 or N:N relationships.
 
-All these configuration is done with "annotations", little comments above the properties of a class. You can look into the file [Student.php](Student.php) to see it in action. This means that the comments have meaning in this, you cannot just remove them!
+All these configuration is done with "annotations", little comments above the properties of a class. You can look into the file [Student.php](src/Entity/Student.php) to see it in action. This means that the comments have meaning in this, you cannot just remove them!
 
 ## The mission 
 
