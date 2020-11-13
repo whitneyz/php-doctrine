@@ -1,20 +1,22 @@
 <?php
 namespace App\Entity;
 
-
-/** @Embeddable */
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping as ORM;
+/** @ORM\Embeddable */
 class Address
 {
-    /** @Column(type="string") * */
+    /** @ORM\Column(type="string") * */
     private $street;
 
-    /** @Column(type="string") * */
+    /** @ORM\Column(type="string") * */
     private $streetNumber;
 
-    /** @Column(type="string") * */
+    /** @ORM\Column(type="string") * */
     private $city;
 
-    /** @Column(type="string") * */
+    /** @ORM\Column(type="string") * */
     private $zipcode;
 
     public function __construct(string $street, int $streetNumber, string $city, int $zipcode)
